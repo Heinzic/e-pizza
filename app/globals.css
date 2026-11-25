@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-/* 1. Определяем переменные палитры в директиве @theme */
 @theme {
-  /* Цвета должны иметь префикс --color- и содержать полное значение (hsl) */
   --color-foreground: hsl(20 14.3% 4.1%);
   --color-card: hsl(0 0% 100%);
   --color-card-foreground: hsl(20 14.3% 4.1%);
@@ -22,11 +20,9 @@
   --color-input: hsl(0 0% 90%);
   --color-ring: hsl(24.6 95% 53.1%);
 
-  /* Радиус тоже можно вынести сюда, хотя это не обязательно */
   --radius: 18px;
 }
 
-/* 2. Базовые стили, которые не используют @apply с кастомными классами, можно оставить */
 html {
   scroll-behavior: smooth;
 }
@@ -41,11 +37,6 @@ html {
   font-family: var(--font-nunito), sans-serif;
 }
 
-/* 3. Стили, где нужен @apply, оборачиваем в @utility */
-
-
-
-/* 4. Стили для NProgress также можно оставить, так как @apply теперь работает через утилиты */
 #nprogress .bar {
   @apply bg-primary!;
 }
@@ -58,7 +49,6 @@ html {
   @apply border-t-primary border-l-primary!;
 }
 
-/* Кастомный скроллбар можно оставить как есть, это чистый CSS */
 .scrollbar::-webkit-scrollbar {
   width: 4px;
 }
