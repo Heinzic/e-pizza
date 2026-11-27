@@ -10,7 +10,7 @@ interface Props {
 
 export function Header({ classname }: Props) {
     return (
-        <header className={cn('border border-b', classname)}>
+        <header className={cn('border border-gray-200', classname)}>
             <Container className="flex items-center justify-between py-8">
                 {/* Левая часть  */}
                 <div className="flex items-center gap-4">
